@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CSHUB - Прямое скачивание Counter-Strike</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            font-family: Tahoma, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #111;
+            border-bottom: 3px solid #ff9600;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #ff9600;
+            gap: 10px;
+        }
+
+        .ico {
+            width: 25px;
+            height: 25px; 
+            gap: 10px;
+        }
+
+        .logo span { color: #0082fc; gap: 5px; }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+
+        .item {
+            background: #222;
+            border: 1px solid #333;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        .item:hover {
+            border-color: #ff9600;
+        }
+
+        .img-box {
+            width: 200px;
+            height: 120px;
+            background: #000;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+
+        .info {
+            flex-grow: 1;
+        }
+
+        .info h2 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .info p {
+            font-size: 13px;
+            color: #999;
+            margin: 0;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            min-width: 180px;
+        }
+
+        .btn {
+            display: block;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 12px;
+            text-transform: uppercase;
+            border-radius: 2px;
+            transition: 0.2s;
+        }
+
+        .btn-steam {
+            background: #0082fc;
+            color: #000 !important;
+        }
+
+        .btn-steam:hover { background: #0082fc; }
+
+        .btn-exe {
+            background: #ff9600;
+            color: #000 !important;
+        }
+
+        .btn-exe:hover { background: #ffae33; }
+
+        .btn-tor {
+            background: #34495e;
+            color: #fff !important;
+        }
+
+        .btn-tor:hover { background: #45627d; }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #555;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">CS<img src="s.png" alt="cs" class="ico"><span>HUB</span></a>
+</header>
+
+<div class="container">
+
+    <!-- CS 1.6 -->
+    <div class="item">
+        <div class="img-box">
+            <img src="https://all-cs.ru/storage/styles/480p/public/upl_images/front/main/counter-strike-1-6-main-menu.jpg?itok=Qga-DXQ8" alt="CS 1.6">
+        </div>
+        <div class="info">  
+            <h2>Counter-Strike 1.6</h2>
+            <p>Чистая версия v43. Прямая загрузка файла.</p>
+        </div>
+        <div class="links">
+            <a href="https://all-cs.ru/sborki/CS16_Setup.exe" class="btn btn-exe" download>Скачать .EXE</a>
+            <a href="https://all-cs.ru/sborki/CS16_Setup.torrent" class="btn btn-tor" download>Скачать .TORRENT</a>
+        </div>
+    </div>
+
+    <!-- CS SOURCE -->
+    <div class="item">
+        <div class="img-box">
+            <img src="https://cs-config.ru/_bl/1/66052062.webp" alt="CS Source">
+        </div>
+        <div class="info">
+            <h2>Counter Strike: Source v34</h2>
+            <p>Классический билд для игры по сети.</p>
+        </div>
+        <div class="links">
+            <a href="https://source-cs.ru/cssv34.exe" class="btn btn-exe" download>Скачать .EXE</a>
+            <a href="https://source-cs.ru/cssv34.torrent" class="btn btn-tor" download>Скачать .TORRENT</a>
+        </div>
+    </div>
+
+    <!-- CS:GO -->
+    <div class="item">
+        <div class="img-box">
+            <img src="https://csgo-download.ru/img/screens/main-menu2.jpg" alt="CS:GO">
+        </div>
+        <div class="info">
+            <h2>Counter Strike: Global Offensive</h2>
+            <p>Legacy-версия с рабочим лаунчером.</p>
+        </div>
+        <div class="links">
+            <a href="https://csgo-download.ru/dl/get.php?id=csgolauncher" class="btn btn-exe" download>Скачать .EXE</a>
+            <a href="https://csgo-download.ru/dl/get.php?id=csgotorrent" class="btn btn-tor" download>Скачать .TORRENT</a>
+        </div>
+    </div>
+
+    <!-- CS2 -->
+    <div class="item">
+        <div class="img-box">
+            <video width="200" height="120" autoplay muted loop playsinline controls>
+                <source src="video.mp4" type="video/mp4">
+                разрешите воспроизведение звука и видео
+            </video>
+        </div>
+        <div class="info">
+            <h2>Counter Strike 2</h2>
+            <p>
+                "Более двух десятилетий Counter-Strike служит 
+                примером первоклассной соревновательной игры, 
+                путь развития которой определяют миллионы игроков 
+                со всего мира. Теперь пришло время нового этапа — 
+                Counter-Strike 2. " - Steam.</p>
+        </div>
+        <div class="links">
+            <a href="https://store.steampowered.com/app/730/CounterStrike_2/" class="btn btn-steam" download>ПЕРЕЙТИ В STEAM</a>
+            <a href="https://s3.meat74.com/cscom/Counter-Strike%202.exe" class="btn btn-exe" download>Скачать .EXE</a>
+            <a href="https://brotorrents.net/index.php?do=download&id=14553" class="btn btn-tor" download>Скачать .TORRENT</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 CSHUB - Используются ссылки других сайтов. Все права защищены.
+</footer>
+
+</body>
+</html>
